@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2? family= Fira+Sans & display=swap');
+
+@import url('https://fonts.googleapis.com/css2? family= Abril+Fatface & display=swap');
+
+
+
+*{
+    margin: 0;padding: 0;
+}
+:root
+{
+    --cor1:#3A7030;
+    --cor2:#BBF2B1;
+    --cor3:#7CF067;
+    --cor4:black;
+    --cor5:white;
+    --destaque:var(--cor3);   
+}
+
+
+body
+{
+    /*background-image: linear-gradient( 55deg, rgba(75, 176, 32, 0.911) 20%,rgba(0, 128, 0, 0.726),rgba(0, 0, 255, 0.683) );*/
+    background-image: url(imagen/imagem-de-fundo.jpg);
+    background-size: cover;   
+}
+
+header 
+{
+    background-image: linear-gradient(rgba(55, 150, 36, 0.571),transparent),url(imagen/FUNDO.jpg);
+    background-size: cover;
+    background-position: center;
+    background-clip: 3px;
+    padding: 70px;
+    text-align: center;
+    margin: auto;      
+}
+
+#text-prin
+{
+    color:rgba(247, 247, 7, 0.931);
+    font-family: 'Abril Fatface', cursiva;
+    font-size: 4em;
+    text-shadow: 2px 3px   var(--cor2);
+    box-shadow: 3px 3px 3px 3px rgba(5, 5, 5, 0.33);
+}
+
+#text-prin:hover
+{
+    color:rgb(255, 174, 0);
+
+}
+
+.text-p
+{
+    color:rgb(12, 14, 14);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#menu-h
+{
+    z-index: 1;
+    position:sticky;
+    top:0;
+}
+
+#menu-h ul
+{
+background-color: var(--cor1);
+color:white;
+padding: 8px;
+margin: auto;
+}
+
+#menu-h ul li
+{
+display: inline;
+}
+
+#menu-h ul li a
+{
+font-family: 'Fira Sans', sem serifa;
+display:inline-block;
+list-style: none;
+color:white;
+text-decoration: none;
+padding: 10px;
+font-weight: bold;
+}
+
+#menu-h  ul li a:hover
+{
+    color:var(--cor1);
+    background-color: var(--cor2);
+    border-radius: 5px;
+    transition: background 2s ;
+}  
+
+main
+{
+    background-color: black;
+    margin: auto;
+    width: 70%;
+    min-width: 400px;
+    max-width:1050px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.263);
+}
+h1
+{
+color:white;
+padding:10px;
+margin:5px;
+}
+
+h2
+{ background-image: linear-gradient(47deg,var(--cor1), transparent);
+    color:var(--cor2);
+    padding:10px;
+    font-size: 1.5em;
+    margin-left: 5px;      
+}
+
+h2:hover
+{
+    color:var(--cor5);
+}
+
+h3
+{
+    background-color:rgba(128, 128, 128, 0.678);
+    margin-top: 10px;
+    color:white;
+    text-align:center;
+    padding:10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin:5px;
+    margin: -10px -10px 0px  -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+strong 
+{
+    color:var(--cor3);
+    font-weight: bold;
+}
+
+.link
+{
+    background-color: #34592d;
+    color:var(--cor3);
+    text-decoration: none;
+    border-radius: 2px;
+    font-size: 1em;
+}
+
+.link::after
+{
+    content:"\00a0\1f517";
+}
+
+.link:hover
+{
+    text-decoration: underline;
+}
+
+main article > p
+{
+    color:white;
+    text-align: center;
+    text-align: justify;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding:10px;
+    text-indent:30px;
+    font-size: 1em;
+    line-height:1.6em;    
+}
+
+img
+{
+    width:100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+aside
+{
+    background-color: var(--cor1);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 3px ;
+    margin-bottom:10px ;
+    border-radius: 10px 10px;
+}
+
+.manga
+{
+    display:flex ;
+    align-items: center;
+    width: 100px;
+    height:300px
+}
+
+.video
+{
+    background-color:var(--cor1);
+    margin:0px -10px 30px -20 ;
+    padding:20px;
+    padding-bottom:50%;
+    position: relative;
+    margin-top: 10px;  
+}
+
+.video iframe
+{
+    position: absolute;
+    top:5%;
+    left:5%;
+    width:90%;
+    height:90%;
+    
+
+}
+
+main ol
+{
+    list-style-position: inside;   
+}
+
+main ol li
+{
+    color:white;
+    text-decoration: none;
+    line-height:2em;
+    font-size: 1em;
+}
+
+aside ol li:hover{
+    color:rgb(0, 0, 0);
+}
+
+footer
+{
+    background-color:var(--cor1);
+    color:white;
+    padding:9px;
+    width: 100vw;
+    text-align:center;
+    font-size: 1em;
+}
+
+footer a{
+    position: relative;
+    color: rgb(0, 0, 1);
+    font-weight: 800;
+    font-size: bolder;
+    text-decoration:none;       
+}
+
+footer p
+{
+    font-size: bolder;   
+}
+
+footer a:hover
+{
+    color:red;
+}
+
+
+    
+    
+
